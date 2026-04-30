@@ -47,184 +47,192 @@
 				<div class="header-upper">
 					<img src="logo-footer.png">
 				</div>
-					
+			</div>
+		</div>
+		
     </header>
-
-    <div class="container">
  
  <!-- KROKOVNÍK -->
 	
-		<nav class="krokovnik">
+	<nav class="krokovnik-wrapper">
+		<div class="krokovnik-container">
 			<ol>
 				<li class="krokovnik-done"><a href="kosik.html"><span>1</span> Košík</a></li>
 				<li class="krokovnik-done"><a href="dorucenie-a-platba.html"><span>2</span> Doručenie a platba</a></li>
 				<li class="krokovnik-active"><span>3</span> Dodacie údaje</li>
-    
 			</ol>
-		</nav>
+		</div>
+	</nav>
 
- <!-- 3. DODACIE ÚDAJE -->
- 
-		<div class="dorucenie-a-platba-container">
-			<main class="dorucenie-a-platba-main">
+<!-- 3. DODACIE ÚDAJE -->
+
+	<div class="checkout-container">
+		<main class="checkout-main">
+			
+			<h2>Dodacie údaje</h2>
+			
+			<div class="customer-existing-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-user">
+					<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+					<circle cx="12" cy="7" r="4"></circle>
+				</svg>
+				<p>Už u nás máte účet? <a href="#">Prihláste sa</a>.</p>
+			</div>
+			
+			<section class="dorucenie-checkout">
+			
+<!-- KONTAKTNÉ ÚDAJE -->
+						
+				<h3 class="form-header">Kontaktné údaje</h3>
 				
-				<h2>Dodacie údaje</h2>
+				<div class="form-block">
+					<div class="inner-grid">
 				
-				<section class="dorucenie-checkout">
-				
- <!-- KONTAKTNÉ ÚDAJE -->
-					  		
-					<h3 class="form-header">Kontaktné údaje</h3>
-					
-					<div class="form-block">
-						<div class="inner-grid">
-					
-							<div class="form-group col-half">
-								<label for="first-name">Meno</label>
-								<input type="text" id="first-name" name="first-name" placeholder="Napr. Roman" required>
-							</div>
-							<div class="form-group col-half">
-								<label for="last-name">Priezvisko</label>
-								<input type="text" id="last-name" name="last-name" placeholder="Napr. Novák" required>
-							</div>
-							<div class="form-group col-half">
-								<label for="email">E-mail</label>
-								<input type="email" id="email" name="email" placeholder="vas@email.sk" required>
-							</div>
-							<div class="form-group col-half">
-								<label for="phone">Telefón</label>
-								<input type="tel" id="phone" name="phone" placeholder="+421 912 345 678" required>
-							</div>
-							
+						<div class="form-group col-half">
+							<label for="first-name">Meno</label>
+							<input type="text" id="first-name" name="first-name" placeholder="Napr. Roman" required>
 						</div>
-					</div>
-
- <!-- ADRESA DORUČENIA -->
-
-					<h3 class="form-header">Adresa doručenia</h3>
-					
-					<div class="form-block">
-						<div class="inner-grid">
-					
-							<div class="form-group col-70">
-								<label for="street">Ulica</label>
-								<input type="text" id="street" name="street" placeholder="Názov ulice" required>
-							</div>
-							<div class="form-group col-30">
-								<label for="street-number">Číslo</label>
-								<input type="text" id="street-number" name="street-number" placeholder="123/A" required>
-							</div>
-							<div class="form-group col-70">
-								<label for="city">Mesto</label>
-								<input type="text" id="city" name="city" placeholder="Názov mesta" required>
-							</div>
-							<div class="form-group col-30">
-								<label for="zip">PSČ</label>
-								<input type="text" id="zip" name="zip" placeholder="811 01" required>
-							</div>
-					
+						<div class="form-group col-half">
+							<label for="last-name">Priezvisko</label>
+							<input type="text" id="last-name" name="last-name" placeholder="Napr. Novák" required>
 						</div>
+						<div class="form-group col-half">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" name="email" placeholder="vas@email.sk" required>
+						</div>
+						<div class="form-group col-half">
+							<label for="phone">Telefón</label>
+							<input type="tel" id="phone" name="phone" placeholder="+421 912 345 678" required>
+						</div>
+						
 					</div>
-					
-				</section>
+				</div>
+
+<!-- ADRESA DORUČENIA -->
+
+				<h3 class="form-header">Adresa doručenia</h3>
 				
+				<div class="form-block">
+					<div class="inner-grid">
+				
+						<div class="form-group col-70">
+							<label for="street">Ulica</label>
+							<input type="text" id="street" name="street" placeholder="Názov ulice" required>
+						</div>
+						<div class="form-group col-30">
+							<label for="street-number">Číslo</label>
+							<input type="text" id="street-number" name="street-number" placeholder="123/A" required>
+						</div>
+						<div class="form-group col-70">
+							<label for="city">Mesto</label>
+							<input type="text" id="city" name="city" placeholder="Názov mesta" required>
+						</div>
+						<div class="form-group col-30">
+							<label for="zip">PSČ</label>
+							<input type="text" id="zip" name="zip" placeholder="811 01" required>
+						</div>
+				
+					</div>
+				</div>
+				
+			</section>
+			
 <!-- FAKTURAČNÁ ADRESA-->			
 
-				<div class="billing-toggle">
-					<label class="checkbox-container">
-						<input type="checkbox" id="billing-checkbox" name="different-billing">
-						Fakturačné údaje sú iné ako doručovacie
-					</label>
-				</div>
+			<div class="billing-toggle">
+				<label class="checkbox-container">
+					<input type="checkbox" id="billing-checkbox" name="different-billing">
+					Fakturačné údaje sú iné ako doručovacie
+				</label>
+			</div>
 
-				<div id="billing-section" style="display: none;">
-					<h3 class="section-title">Fakturačné údaje</h3>
-					<div class="form-block">
-						<div class="inner-grid">
-							<div class="form-group col-70">
-								<label for="bill-company">Názov firmy / meno</label>
-								<input type="text" id="bill-company" name="bill-company">
-							</div>
-							<div class="form-group col-30">
-								<label for="bill-ico">IČO</label>
-								<input type="text" id="bill-ico" name="bill-ico">
-							</div>
-							</div>
-					</div>
+			<div id="billing-section" style="display: none;">
+				<h3 class="section-title">Fakturačné údaje</h3>
+				<div class="form-block">
+					<div class="inner-grid">
+						<div class="form-group col-70">
+							<label for="bill-company">Názov firmy / meno</label>
+							<input type="text" id="bill-company" name="bill-company">
+						</div>
+						<div class="form-group col-30">
+							<label for="bill-ico">IČO</label>
+							<input type="text" id="bill-ico" name="bill-ico">
+						</div>
+						</div>
 				</div>
-				
+			</div>
+			
 <!-- O KROK SPAŤ-->	
-				
-				<a href="dorucenie-a-platba.html" class="spat-do-kosika">&larr; Späť do doručenia a platby</a>
-				
-			</main>
+			
+			<a href="dorucenie-a-platba.html" class="spat-do-kosika">&larr; Späť do doručenia a platby</a>
+			
+		</main>
 
 <!-- ZHRNUTIE OBJEDNÁVKY-->	
 
-			<aside class="dorucenie-a-platba-sidebar">
-				<div class="zhrnutie-objednavky">
-					<h3>Rekapitulácia objednávky</h3>
-					
-					<hr>
-					
-					<div class="summary-product-list">
-						<div class="summary-item">
-							<div class="item-info">
-								<span class="item-name">Bhut Jolokia Pasta</span>
-								<span class="item-meta">1 ks × 7,50 €</span>
-							</div>
-							<span class="item-total">7,50 €</span>
+		<aside class="checkout-sidebar">
+			<div class="zhrnutie-objednavky">
+				<h3>Rekapitulácia objednávky</h3>
+				
+				<hr>
+				
+				<div class="summary-product-list">
+					<div class="summary-item">
+						<div class="item-info">
+							<span class="item-name">Bhut Jolokia Pasta</span>
+							<span class="item-meta">1 ks × 7,50 €</span>
 						</div>
-
-						<div class="summary-item">
-							<div class="item-info">
-								<span class="item-name">Habanero Extra</span>
-								<span class="item-meta">2 ks × 7,50 €</span>
-							</div>
-							<span class="item-total">15,00 €</span>
-						</div>
+						<span class="item-total">7,50 €</span>
 					</div>
 
-					<hr>
-					
-					<div class="celkom-za-tovar">
-						<span>Celkom za tovar:</span>
-						<span>22,50 €</span>
+					<div class="summary-item">
+						<div class="item-info">
+							<span class="item-name">Habanero Extra</span>
+							<span class="item-meta">2 ks × 7,50 €</span>
+						</div>
+						<span class="item-total">15,00 €</span>
 					</div>
-					
-					<hr>
-					
-					<div class="dorucenie-sumar">
-						<span>DPD - doručenie na adresu</span>
-						<span>4,00 €</span>
-					</div>
-					<div class="platba-sumar">
-						<span>Online platba kartou</span>
-						<span>ZADARMO</span>
-					</div>
-					
-					<hr>
-					
-					<div class="cena-total">
-						<span>Celkom k úhrade:</span>
-						<span><strong>26,50 €</strong></span>
-					</div>
-					
-					<div class="suhlas">
-						<label class="checkbox-container">
-							<input type="checkbox" id="suhlas-checkbox" name="suhlas">
-							Súhlasím s <a href="">obchodnými podmienkami</a> a <a href="">podmienkami o ochrane súkromia</a>.
-						</label>
-					</div>
-					
-					<a href="#" class="btn-next">Odoslať objednávku &rarr;</a>
-					
-					<p class="suhlas">Odosielate objednávku s povinnosťou platby.</p>
-					
 				</div>
-			</aside>
-		</div>
-	</main>
+
+				<hr>
+				
+				<div class="celkom-za-tovar">
+					<span>Celkom za tovar:</span>
+					<span>22,50 €</span>
+				</div>
+				
+				<hr>
+				
+				<div class="dorucenie-sumar">
+					<span>DPD - doručenie na adresu</span>
+					<span>4,00 €</span>
+				</div>
+				<div class="platba-sumar">
+					<span>Online platba kartou</span>
+					<span>ZADARMO</span>
+				</div>
+				
+				<hr>
+				
+				<div class="cena-total">
+					<span>Celkom k úhrade:</span>
+					<span><strong>26,50 €</strong></span>
+				</div>
+				
+				<div class="suhlas">
+					<label class="checkbox-container">
+						<input type="checkbox" id="suhlas-checkbox" name="suhlas">
+						Súhlasím s <a href="">obchodnými podmienkami</a> a <a href="">podmienkami o ochrane súkromia</a>.
+					</label>
+				</div>
+				
+				<button type="submit" class="btn-next">Odoslať objednávku &rarr;</button>
+				
+				<p class="suhlas">Odosielate objednávku s povinnosťou platby.</p>
+				
+			</div>
+		</aside>
+	</div>
 	
 <!-- FOOTER -->	
 
@@ -237,7 +245,7 @@
 			
 				
 			<div class="potrebujete-poradit">
-				<h2>Potrebujete pomôcť, poradiť?</h3>
+				<h2>Potrebujete pomôcť, poradiť?</h2>
 				<h3>Roman Kováčik<br />info@fruitychilli.sk</h3>
 			</div>
         </div>
