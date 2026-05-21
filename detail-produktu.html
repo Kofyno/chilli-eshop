@@ -9,20 +9,22 @@
 </head>
 <body>
 
-    <header>
+<!-- HEADER -->
+
+    <header class="header-wrapper">
 	
 <!-- TOP MENU -->
 	
-		<div class="top-menu-wrapper">
+		<div class="top-bar-wrapper">
 			
-			<div class="top-menu-content">
-				<div class="top-menu-odkazy">
+			<div class="top-bar-container">
+				<div class="top-bar-links">
 					<a href="">Doručenie a platba</a>
 					<a href="">Obchodné podmienky</a>
 					<a href="">Ochrana osobných údajov</a>
 				</div>
 				
-				<div class="login-registracia">
+				<div class="login-registration-links">
 					<div class="login-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-user">
 						<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
@@ -35,106 +37,158 @@
 				
 			</div>
 		</div>
+
+
+<!-- HEADER MAIN -->				
 		
-		<div class="header-wrapper">
-			<div class="header-content">
-
-
-
-<!-- HEADER UPPER -->				
-				<div class="header-upper">
+		<div class="header-main-wrapper">
+			<div class="header-main-container">
+			
+				<a href="index.html">
 					<img src="logo-footer.png">
-	
-	<!-- search bar -->
-					<div class="search">
-						<form class="search-bar" action="/hladat" method="GET">
-							<div class="search-input-wrapper">
-								<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<circle cx="11" cy="11" r="8"></circle>
-									<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-								</svg>
-								<input type="text" name="search" placeholder="Zadajte, čo hľadáte..." aria-label="Vyhľadávanie">
-							</div>
-							<button type="submit">Hľadať</button>
-						</form>
-					</div>
+				</a>
+				
+<!-- SEARCH BAR -->
 
-<!-- MINI-CART -->					
+				<div class="search">
+					<form class="search-bar" action="/hladat" method="GET">
+						<div class="search-input-wrapper">
+							<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="11" cy="11" r="8"></circle>
+								<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+							</svg>
+							<input type="text" name="search" placeholder="Zadajte, čo hľadáte..." aria-label="Vyhľadávanie">
+						</div>
+						<button type="submit">Hľadať</button>
+					</form>
+				</div>
 
-					<div class="mini-cart-box">
-									
-						<a href="/kosik" class="mini-cart">
-							<svg class="mini-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<!-- WISHLIST -->
+
+			<div class="flex-spc-btwn">
+
+				<div class="wishlist-wrapper">
+
+					<a href="" class="wishlist-btn" aria-label="Pridať do obľúbených">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-heart">
+							<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+						</svg>
+						<span>Obľúbené (10)</span>
+					</a>
+					
+					
+				</div>
+
+<!-- MINI-CART -->
+
+				<div class="mini-cart-wrapper">
+					
+					<a href="cart.html" class="mini-cart-link">
+							<svg class="mini-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="9" cy="21" r="1"></circle>
 								<circle cx="20" cy="21" r="1"></circle>
 								<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
 							</svg>
-							<span class="cart-count">2</span>
-							<span class="cart-text">15,00 €</span>
-						</a>
-	
-	<!-- mini-cart drop-down -->					
-						<div class="mini-cart-drop-down">
-							
-							<div class="mini-cart-product">
-								<a href="">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
-								<span class="mini-cart-count"><strong>2 ks<br />15,00 €</strong></span>
-								<button class="item-remove">×</button>
+							<span class="mini-cart-product-count">2</span>
+						<span class="mini-cart-text">22,50 €</span>
+					</a>
+				
+
+<!-- MINI-CART DROPDOWN -->
+
+					<div class="mini-cart-dropdown">
+
+						<div class="mini-cart-dropdown-items-list">
+						
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>2 ks x 7,50 €</small>
+								</div>
+								<span><strong>15,00&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
 							</div>
 							
-							<div class="mini-cart-product">
-								<a href="">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
-								<span class="mini-cart-count"><strong>1 ks<br />7,50 €</strong></span>
-								<button class="item-remove">×</button>
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>1 ks x 7,50 €</small>
+								</div>
+								<span><strong>7,50&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
 							</div>
-							
-							<span class="mini-cart-nakupte-este">Nakúpte ešte za <strong>27,50 €</strong> a získajte <strong>doručenie ZADARMO</strong>.</span>
-							
-							<button class="mini-cart-btn">Dokončiť nákup</button>
 							
 						</div>
-						
-					</div>
-					
-				</div>
 
+						<div class="mini-cart-dropdown-free-shipping-info">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+								<rect x="1" y="3" width="15" height="13"></rect>
+								<polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+								<circle cx="5.5" cy="18.5" r="2.5"></circle>
+								<circle cx="18.5" cy="18.5" r="2.5"></circle>
+							</svg>
+							<span>Nakúpte ešte za <strong>27,50 €</strong> a máte <strong>doručenie ZADARMO</strong>.</span>
+						</div>
+						<a href="/pokladna" class="mini-cart-dropdown-btn">Dokončiť nákup &rarr;</a>
+					</div>
+				
+				</div>
+				
+			</div>
+				
+			</div>
+				
+		</div>
+		
 <!-- MENU -->				
 
-				<nav>
-					<div class="nav-main">
-						<ul class="nav-list">
-							<li class="has-mega-menu">
-								<a href="/produkty" class="mega-menu-link">Chilli produkty</a>
-								<div class="mega-menu">
-									<div class="mega-menu-content">
-										<div class="mega-menu-item">
-											<div class="mega-menu-img"><img src="produkt.png"></div>
-											<h3><a href>Chilli pasty</a></h3>
-										</div>
-										
-										<div class="mega-menu-item">
-											<div class="mega-menu-img"><img src="produkt.png"></div>
-											<h3><a href>Chilli omáčky</a></h3>
-										</div>
-									</div>
+		<nav class="nav-main-wrapper">
+			<div class="nav-main-container">
+			
+				<ul class="nav-main-list">
+				
+					<li class="has-mega-menu">
+						<a href="/produkty" class="mega-menu-link">Chilli produkty</a>
+						
+						<div class="mega-menu">
+							<div class="mega-menu-content">
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli pasty</a></h3>
 								</div>
-							</li>
-							<li><a href="/o-nas">O nás</a></li>
-							<li><a href="/kontakt">Kontakt</a></li>
-						</ul>
-					</div>
-				</nav>
+								
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli omáčky</a></h3>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					
+					<li><a href="/clanky">Články</a></li>
+					<li><a href="/o-nas">O nás</a></li>
+					<li><a href="/kontakt">Kontakt</a></li>
+					
+				</ul>
+				
 			</div>
-		</div>
-    </header>
+		</nav>
+				
+	</header>
+
+<!-- CONTAINER -->
 
     <main class="container">
 		
 <!-- BREADCRUMBS -->
-		<nav aria-label="Drobčeková navigácia" class="breadcrumb">
+
+		<nav aria-label="Drobčeková navigácia" class="breadcrumbs">
 			<ol itemscope itemtype="https://schema.org/BreadcrumbList">
 				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-					<a href="/" itemprop="item"><span itemprop="name">Domov</span></a>
+					<a href="/" itemprop="item"><span itemprop="name">FruityChilli.sk</span></a>
 					<meta itemprop="position" content="1" />
 				</li>
 				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -151,66 +205,79 @@
 <!-- PRODUCT BASICS -->
 
 		<section class="product-basics">
-			<div class="product-img">
+		
+			<div class="product-basics-img">
 				<img src="produkt.png">
 			</div>
 
 			<div class="product-basics-info">
+			
 				<h1>Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h1>
 				
-				<div class="product-basics-tag-top">TOP</div>
+				<div class="product-basics-info-tag-top">TOP</div>
 				
 				<div class="product-basics-info-rating">
-					<div class="stars">
-						<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<span class="product-basics-info-rating-text"><strong>4,8</strong> <a href="">(12 hodnotení)</a></span>
+					<div class="product-basics-info-stars">	
+						<svg class="product-basics-info-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<svg class="product-basics-info-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<svg class="product-basics-info-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<svg class="product-basics-info-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<svg class="product-basics-info-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
 					</div>
+					<span class="product-basics-info-rating-text"><strong>4,7</strong> <a href="#">(3 hodnotenia)</a></span>
 				</div>
 			
-				<p class="short-description">Chilli pasta spracovaná za studena z extrémne pálivých chilli papričiek Bhut Jolokia.</p>
+				<p class="product-basics-info-short-description">Chilli pasta spracovaná za studena z extrémne pálivých chilli papričiek Bhut Jolokia.</p>
 				
-				<p class="more-info"><a href="#product-details">Viac info</a></p>
+				<div class="flex-spc-btwn">
+				
+					<a href="#product-details-info" class="product-basics-info-more-info"><span >Viac info</span></a>
+				
+					<a href="" class="wishlist-btn" aria-label="Pridať do obľúbených">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-heart">
+							<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+						</svg>
+						<span>Pridať do obľubených</span>
+					</a>
+					
+				</div>
 								
-				<div class="button-box">
-					<div class="dostupnost-moznosti-dorucenia">
-						<span class="dostupnost">Skladom (odosielame do 2 prac. dní)</span>
-						<span class="moznosti-dorucenia"><a href="">Možnosti doručenia</a></span>
+				<div class="add-to-cart-btn-box">
+					<div class="add-to-cart-btn-box-in-stock-and-shipping-options">
+						<span class="add-to-cart-btn-box-in-stock">Skladom (odosielame do 2 prac. dní)</span>
+						<span class="add-to-cart-btn-box-shipping-options"><a href="">Možnosti doručenia</a></span>
 					</div>
-					<div class="price-and-button">
-						<span class="price">7,50 €</span>
-						<button class="add-to-cart">Vložiť do košíka</button>
+					<div class="add-to-cart-btn-box-price-and-add-to-cart-btn">
+						<span class="add-to-cart-btn-box-price">7,50&nbsp;€</span>
+						<button class="add-to-cart-btn-box-add-to-cart-btn">Vložiť do košíka</button>
 					</div>
 				</div>
 
-<!-- VÝHODY -->
+<!-- ADVENTAGES -->
 
-				<div class="advantages">
+				<div class="advantages-container">
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Iba chilli s ovocnou chuťou</a>
 						</div>
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Chilli iba od SK a CZ výrobcov</a>
 						</div>
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Chilli iba v skle (žiadny plast)</a>
 						</div>
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Vrátenie peňazí bez otázok</a>
 						</div>
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Priateľský e-shop Coffeein.sk</a>
 						</div>
 						<div class="advantage-item">
-							<img src="fajka.png" width="48px" class="icon">
+							<img src="swoosh.png" class="icon">
 							<a href="">Doručenie nad 50 € ZADARMO</a>
 						</div>
 				</div>
@@ -218,42 +285,97 @@
 			</div>
 		</section>
 
-		<hr>
+<!-- OTHER PRODUCTS -->
 
-<!-- OTHER PRODUCTS -->		
-		<section class="other-products">
-		<h2>Prihoďte si ešte k objednávke</h2>
-			<div class="other-products-grid">
+		<section class="product-list">
+		
+			<h2>Ďalšie produkty</h2>
+		
+			<div class="product-list-grid">
 				
+				<!-- 1. PRODUKT -->
 				<article class="product-card">
-					<a href="/produkt-detail" class="product-link">
-						<span class="tag-sale">AKCIA</span>
-						<div class="product-image">
-							<img src="produkt.webp" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">
-							
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-sale">AKCIA</span>
+						<span class="product-card-tag-top">TOP</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
 						</div>
-					</a>	
+					</a>
+					<div class="product-card-info">
+						<div class="product-card-rating">
+							<div class="product-card-stars">
+								<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
+							<span class="product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
+						</div>
+						<a href="" class="product-card-product-title-link">
+							<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+						</a>
+						<div class="product-card-prices">
+							<span class="product-card-current-price">7,50 €</span>
+							<span class="product-card-old-price">10,50 €</span>	
+						</div>
+					</div>
+					<div class="product-card-in-stock-and-add-to-cart-btn">
+						<span class="product-card-in-stock">Skladom</span>
+						<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+					</div>
+				</article>
 
-						<div class="product-info">
-							<div class="product-rating-mini">
-								<span class="stars">★★★★★</span>
-								<span class="count"><strong>4,8</strong> (12x)</span>
-							</div>
-							<a href="" class="product-link">
-								<h3 class="product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
-							</a>
-							
-								<div class="product-price">
-								<span class="current-price">19.90 €</span>
-								<span class="old-price">24.90 €</span>
-								
-							</div>
-							
+				<!-- 2. PRODUKT -->
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-top">TOP</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta">	
 						</div>
-						<div class="skladom-btn">
-							<span class="skladom">Skladom</span>
-							<button class="add-to-cart-simple">Vložiť do košíka</button>
-						</div>	
+					</a>
+					<div class="product-card-info">
+						<div class="product-card-rating">
+							<div class="product-card-stars">
+								<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
+							<span class="product-card-rating-text"><strong>4,5</strong> <a href="">(5x)</a></span>
+						</div>
+						<a href="" class="product-card-product-title-link">
+							<h3 class="product-card-product-title">Chilli omáčka - Habanero Yellow</h3>
+						</a>
+						<div class="product-card-prices">
+							<span class="product-card-current-price">6,90 €</span>
+						</div>
+					</div>
+					<div class="product-card-in-stock-and-add-to-cart-btn">
+						<span class="product-card-in-stock">Skladom</span>
+						<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+					</div>
+				</article>
+
+				<!-- 3. PRODUKT -->
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta">	
+						</div>
+					</a>
+					<div class="product-card-info">
+						<div class="product-card-rating">
+							<div class="product-card-stars">
+								<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
+							<span class="product-card-rating-text"><strong>4,9</strong> <a href="">(8x)</a></span>
+						</div>
+						<a href="" class="product-card-product-title-link">
+							<h3 class="product-card-product-title">Jalapeno krájané v náleve</h3>
+						</a>
+						<div class="product-card-prices">
+							<span class="product-card-current-price">5,50 €</span>
+						</div>
+					</div>
+					<div class="product-card-in-stock-and-add-to-cart-btn">
+						<span class="product-card-in-stock">Skladom</span>
+						<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+					</div>
 				</article>
 				
 			</div>
@@ -261,6 +383,7 @@
 		</section>
 		
 <!-- PRODUCT DETAILS -->
+
 		<section id="product-details-info">
 			<h2>Popis produktu</h2>
 			<div class="product-details-info-content">
@@ -278,81 +401,72 @@
 		</section>
 			
 <!-- PRODUCT REVIEWS -->
-		<section class="product-reviews">
+
+		<section class="product-reviews-container">
+		
 			<h2>Hodnotenia</h2>
-			<div class="product-reviews-container">
+		
+			<div class="product-reviews">
 				
 				<div class="product-reviews-total">
 						
-					<span class="product-reviews-average"><strong>4,8</strong></span>
+					<span class="product-reviews-total-average"><strong>4,7</strong></span>
 				
-					<div class="stars-product-reviews">
-						<svg class="star-icon-reviews fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon-reviews fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon-reviews fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon-reviews fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						<svg class="star-icon-reviews" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-						
-						<span class="rating-text">Na základe 124 recenzií.</span>
-					
+					<div class="product-reviews-total-stars">
+						<svg class="product-reviews-total-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-total-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-total-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-total-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-total-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
 					</div>
 					
-					<button>Pridať recenziu</button>
+					<span class="product-reviews-total-rating-text">Na základe 3 hodnotení.</span>
+					
+					<button class="product-reviews-total-add-review-btn">Pridať hodnotenie</button>
 			
 				</div>
 							
 				<div class="product-reviews-items">
 				
 					<div class="product-reviews-item">
-						<p  class="product-reviews-item-hodnotil"><strong>Peter</strong></p>
-						<p class="product-reviews-item-hodnotene">Hodnotené: 18. 3. 2026</p>
-						<div class="stars-product-reviews">
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<div class="product-reviews-item-info">
+							<span  class="product-reviews-item-reviewer"><strong>Peter</strong></span>
+							<span class="product-reviews-item-date">18. 3. 2026</span>
+							<div class="product-reviews-item-stars">
+								<svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
 						</div>
 						<p class="product-reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus a velit vitae auctor. Nulla facilisi. Vestibulum blandit ac purus ut semper. Donec convallis eros ac malesuada semper. Curabitur euismod, metus molestie posuere luctus, purus lorem pulvinar dolor, a blandit eros felis ac ligula. Nam et est libero. Nunc eleifend varius felis, condimentum pellentesque lectus cursus non. Cras a egestas mi, ac bibendum velit.</p>
 					</div>
-					
-					<hr>
 					
 					<div class="product-reviews-item">
-						<p  class="product-reviews-item-hodnotil"><strong>Peter</strong></p>
-						<p class="product-reviews-item-hodnotene">Hodnotené: 18. 3. 2026</p>
-						<div class="stars-product-reviews">
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<div class="product-reviews-item-info">
+							<span  class="product-reviews-item-reviewer"><strong>Martin</strong></span>
+							<span class="product-reviews-item-date">18. 3. 2026</span>
+							<div class="product-reviews-item-stars">
+								<svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
 						</div>
-						<p class="product-reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus a velit vitae auctor. Nulla facilisi. Vestibulum blandit ac purus ut semper. Donec convallis eros ac malesuada semper. Curabitur euismod, metus molestie posuere luctus, purus lorem pulvinar dolor, a blandit eros felis ac ligula. Nam et est libero. Nunc eleifend varius felis, condimentum pellentesque lectus cursus non. Cras a egestas mi, ac bibendum velit.</p>
+						<p class="product-reviews-item-text">Cras ornare luctus eros quis sagittis. Vivamus in mi sed nulla posuere scelerisque sit amet vitae sem. Mauris hendrerit dui vitae ipsum eleifend rhoncus. Integer eleifend, orci at pellentesque feugiat, ipsum turpis tempus leo, at elementum ex tellus id ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam sed quam sed ex tempus pharetra finibus id lorem.</p>
 					</div>
-					
-					<hr>
 					
 					<div class="product-reviews-item">
-						<p  class="product-reviews-item-hodnotil"><strong>Peter</strong></p>
-						<p class="product-reviews-item-hodnotene">Hodnotené: 18. 3. 2026</p>
-						<div class="stars-product-reviews">
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-								<svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+						<div class="product-reviews-item-info">
+							<span  class="product-reviews-item-reviewer"><strong>Lucia</strong></span>
+							<span class="product-reviews-item-date">18. 3. 2026</span>
+							<div class="product-reviews-item-stars">
+								<svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-reviews-item-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+							</div>
 						</div>
-						<p class="product-reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus a velit vitae auctor. Nulla facilisi. Vestibulum blandit ac purus ut semper. Donec convallis eros ac malesuada semper. Curabitur euismod, metus molestie posuere luctus, purus lorem pulvinar dolor, a blandit eros felis ac ligula. Nam et est libero. Nunc eleifend varius felis, condimentum pellentesque lectus cursus non. Cras a egestas mi, ac bibendum velit.</p>
+						<p class="product-reviews-item-text">Donec fermentum magna a mi vehicula sodales. Etiam at sem quis lectus tempor convallis at quis justo. Morbi laoreet ligula arcu, vitae viverra ex vestibulum in. Nunc sem diam, sagittis at volutpat eu, rutrum ut nunc.</p>
 					</div>
+					
 				
 				</div>
 			</div>
 		</section>
 
+<!-- END OF CONTAINER - MAIN -->
+
 	</main>
 	
-
+<!-- FOOTER -->
 
     <footer  class="footer-container">
 	    <div class="footer">
@@ -361,7 +475,7 @@
 				<img src="logo-footer.png">
 			</div>
 			
-			<div id="footer-informacie">
+			<div class="footer-information">
 				<h3>Informácie</h3>
 				<ul>
 					<li><a href="">Doručenie a platba</a></li>
@@ -376,11 +490,10 @@
 				</p>
 			</div>
         </div>
-		<div id="footer-down-container">
-			<div id="footer-down"><p>&copy; 2026 FruityChilli.sk. Všetky práva vyhradené.</p></div>
+		<div class="footer-down-container">
+			<div class="footer-down"><p>&copy; 2026 FruityChilli.sk. Všetky práva vyhradené.</p></div>
 		</div>
 	</footer>
-
 
 </body>
 </html>

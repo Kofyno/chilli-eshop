@@ -9,20 +9,22 @@
 </head>
 <body>
 
-    <header>
+<!-- HEADER -->
+
+    <header class="header-wrapper">
 	
 <!-- TOP MENU -->
 	
-		<div class="top-menu-wrapper">
+		<div class="top-bar-wrapper">
 			
-			<div class="top-menu-content">
-				<div class="top-menu-odkazy">
+			<div class="top-bar-container">
+				<div class="top-bar-links">
 					<a href="">Doručenie a platba</a>
 					<a href="">Obchodné podmienky</a>
 					<a href="">Ochrana osobných údajov</a>
 				</div>
 				
-				<div class="login-registracia">
+				<div class="login-registration-links">
 					<div class="login-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-user">
 						<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
@@ -35,117 +37,148 @@
 				
 			</div>
 		</div>
+
+
+<!-- HEADER MAIN -->				
 		
-		<div class="header-wrapper">
-			<div class="header-content">
-
-
-
-<!-- HEADER UPPER -->				
-				<div class="header-upper">
+		<div class="header-main-wrapper">
+			<div class="header-main-container">
+			
+				<a href="index.html">
 					<img src="logo-footer.png">
-	
-	<!-- search bar -->
-					<div class="search">
-						<form class="search-bar" action="/hladat" method="GET">
-							<div class="search-input-wrapper">
-								<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<circle cx="11" cy="11" r="8"></circle>
-									<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-								</svg>
-								<input type="text" name="search" placeholder="Zadajte, čo hľadáte..." aria-label="Vyhľadávanie">
-							</div>
-							<button type="submit">Hľadať</button>
-						</form>
-					</div>
-					
-<!-- MINI-CART -->					
+				</a>
+				
+<!-- SEARCH BAR -->
 
-					<div class="mini-cart-box">
-									
-						<a href="/kosik" class="mini-cart">
-							<svg class="mini-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<div class="search">
+					<form class="search-bar" action="/hladat" method="GET">
+						<div class="search-input-wrapper">
+							<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="11" cy="11" r="8"></circle>
+								<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+							</svg>
+							<input type="text" name="search" placeholder="Zadajte, čo hľadáte..." aria-label="Vyhľadávanie">
+						</div>
+						<button type="submit">Hľadať</button>
+					</form>
+				</div>
+
+<!-- MINI-CART -->
+
+				<div class="mini-cart-wrapper">
+					
+					<a href="cart.html" class="mini-cart-link">
+							<svg class="mini-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="9" cy="21" r="1"></circle>
 								<circle cx="20" cy="21" r="1"></circle>
 								<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
 							</svg>
-							<span class="cart-count">2</span>
-							<span class="cart-text">15,00 €</span>
-						</a>
-	
-	<!-- mini-cart drop-down -->					
-						<div class="mini-cart-drop-down">
-							
-							<div class="mini-cart-product">
-								<a href="">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
-								<span class="mini-cart-count"><strong>2 ks<br />15,00 €</strong></span>
-								<button class="item-remove">×</button>
+							<span class="mini-cart-product-count">2</span>
+						<span class="mini-cart-text">22,50 €</span>
+					</a>
+
+<!-- MINI-CART DROPDOWN -->
+
+					<div class="mini-cart-dropdown">
+
+						<div class="mini-cart-dropdown-items-list">
+						
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>2 ks x 7,50 €</small>
+								</div>
+								<span><strong>15,00&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
 							</div>
 							
-							<div class="mini-cart-product">
-								<a href="">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
-								<span class="mini-cart-count"><strong>1 ks<br />7,50 €</strong></span>
-								<button class="item-remove">×</button>
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>1 ks x 7,50 €</small>
+								</div>
+								<span><strong>7,50&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
 							</div>
-							
-							<span class="mini-cart-nakupte-este">Nakúpte ešte za <strong>27,50 €</strong> a získajte <strong>doručenie ZADARMO</strong>.</span>
-							
-							<button class="mini-cart-btn">Dokončiť nákup</button>
 							
 						</div>
-						
-					</div>
-					
-				</div>
 
+						<div class="mini-cart-dropdown-free-shipping-info">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+								<rect x="1" y="3" width="15" height="13"></rect>
+								<polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+								<circle cx="5.5" cy="18.5" r="2.5"></circle>
+								<circle cx="18.5" cy="18.5" r="2.5"></circle>
+							</svg>
+							<span>Nakúpte ešte za <strong>27,50 €</strong> a máte <strong>doručenie ZADARMO</strong>.</span>
+						</div>
+						<a href="/pokladna" class="mini-cart-dropdown-btn">Do pokladne</a>
+					</div>
+				
+				</div>
+				
+			</div>
+				
+		</div>
+		
 <!-- MENU -->				
 
-				<nav>
-					<div class="nav-main">
-						<ul class="nav-list">
-							<li class="has-mega-menu">
-								<a href="/produkty" class="mega-menu-link">Chilli produkty</a>
-								<div class="mega-menu">
-									<div class="mega-menu-content">
-										<div class="mega-menu-item">
-											<div class="mega-menu-img"><img src="produkt.png"></div>
-											<h3><a href>Chilli pasty</a></h3>
-										</div>
-										
-										<div class="mega-menu-item">
-											<div class="mega-menu-img"><img src="produkt.png"></div>
-											<h3><a href>Chilli omáčky</a></h3>
-										</div>
-									</div>
+		<nav class="nav-main-wrapper">
+			<div class="nav-main-container">
+			
+				<ul class="nav-main-list">
+				
+					<li class="has-mega-menu">
+						<a href="/produkty" class="mega-menu-link">Chilli produkty</a>
+						
+						<div class="mega-menu">
+							<div class="mega-menu-content">
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli pasty</a></h3>
 								</div>
-							</li>
-							<li><a href="/o-nas">O nás</a></li>
-							<li><a href="/kontakt">Kontakt</a></li>
-						</ul>
-					</div>
-				</nav>
+								
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli omáčky</a></h3>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					
+					<li><a href="/clanky">Články</a></li>
+					<li><a href="/o-nas">O nás</a></li>
+					<li><a href="/kontakt">Kontakt</a></li>
+					
+				</ul>
+				
 			</div>
-		</div>
-    </header>
+		</nav>
+				
+	</header>
 
-    <main class="container">
- 
- <!-- KROKOVNÍK -->
-	
-		<nav class="krokovnik">
+<!-- CHECKOUT - PROGRESS BAR -->
+
+	<nav class="checkout-progress-bar-wrapper">
+		<div class="checkout-progress-bar-container">
 			<ol>
-				<li class="krokovnik-active"><span>1</span> Košík</li>
+				<li class="checkout-progress-bar-active"><span>1</span> Košík</li>
 				<li><span>2</span> Doručenie a platba</li>
 				<li><span>3</span> Dodacie údaje</li>
-    
 			</ol>
-		</nav>
+		</div>
+	</nav>
 
- <!-- 1. KOŠÍK -->
- 
-	<!-- KOŠÍK - nakúpte ešte za -->
- 
-		<div class="obsah-kosika-nakupte-este">
+<!-- CHECKOUT - CART -->
+
+	<main class="cart-container">
+
+<!-- FREE SHIPPING INFO -->
+
+		<div class="free-shipping-info">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<rect x="1" stroke="none" fill="none" />
 				<path d="M1 3h15v13H1z" />
@@ -156,190 +189,205 @@
 			<span>Nakúpte ešte za <strong>27,50 €</strong> a získajte <strong>doručenie ZADARMO</strong>.</span>
 		</div>
 
-	<!-- KOŠÍK - obsah košíka -->
+<!-- CART CONTENT - TABLE -->
 
-		<section class="obsah-kosika">
-			<h2>V košíku máte tieto produkty</h2>
+		<section class="cart-content">
+			
+			<h2>V košíku 3 položky za 22,50 €</h2>
+			
 			<table class="cart-table">
+				
 				<thead>
 					<tr>
 						<th>Produkt</th>
 						<th>Dostupnosť</th>
+						<th class="cart-table-col-unit-price">Cena za ks</th>
 						<th>Množstvo</th>
-						<th class="col-unit-price">Cena za ks</th>
-						<th class="col-total-price">Cena spolu</th>
+						<th class="cart-table-col-total-price">Cena spolu</th>
 						<th></th>
 					</tr>
 				</thead>
+				
 				<tbody>
 					<tr>
-						<td class="col-product">
-							<div class="product-info-2">
-								<div class="item-img">
+						<td class="cart-table-col-product">
+							<div class="cart-table-product-info">
+								<div class="cart-table-item-img">
 									<img src="produkt.png" alt="Chilli pasta">
 								</div>
-								<div class="item-details">
-									<a href="#" class="item-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+								<div class="cart-table-item-details">
+									<a href="#" class="cart-table-item-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
 								</div>
 							</div>
 						</td>
-						<td><span class="stock-status">Skladom</span></td>
+						<td><span class="cart-table-stock-status">Skladom</span></td>
+						<td>7,50 €</td>
 						<td>
-							<div class="item-quantity">
+							<div class="cart-table-item-quantity">
 								<button>-</button>
 								<input type="number" value="1">
 								<button>+</button>
 							</div>
 						</td>
-						<td><strong>8,90 €</strong></td>
-						<td><strong>19.90 €</strong></td>
-						<td><button class="item-remove">×</button></td>
+						<td class="cart-table-col-total-price"><strong>15,00 €</strong></td>
+						<td><button class="cart-table-item-remove">×</button></td>
 					</tr>
 					
 					<tr>
-						<td class="col-product">
-							<div class="product-info-2">
-								<div class="item-img">
+						<td class="cart-table-col-product">
+							<div class="cart-table-product-info">
+								<div class="cart-table-item-img">
 									<img src="produkt.png" alt="Chilli pasta">
 								</div>
-								<div class="item-details">
-									<a href="#" class="item-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+								<div class="cart-table-item-details">
+									<a href="#" class="cart-table-item-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
 								</div>
 							</div>
 						</td>
-						<td><span class="stock-status">Skladom</span></td>
+						<td><span class="cart-table-stock-status">Skladom</span></td>
+						<td>7,50 €</td>
 						<td>
-							<div class="item-quantity">
+							<div class="cart-table-item-quantity">
 								<button>-</button>
 								<input type="number" value="1">
 								<button>+</button>
 							</div>
 						</td>
-						<td><strong>8,90 €</strong></td>
-						<td><strong>19.90 €</strong></td>
-						<td><button class="item-remove">×</button></td>
+						<td class="cart-table-col-total-price"><strong>7,50 €</strong></td>
+						<td><button class="cart-table-item-remove">×</button></td>
 					</tr>
+				
 				</tbody>
 			</table>
+
+<!-- DISCOUNT CODE - CART SUMMARY -->			
 			
-			<div class="discount-section">
-				<details>
-					<summary>Máte zľavový kód?</summary>
-					<div class="discount-content">
-						<input type="text" placeholder="Zadajte kód" class="discount-input">
-						<button class="discount-btn">Uplatniť</button>
+			<div class="cart-table-footer">
+			
+				<div class="discount-code-wrapper">
+					<details>
+						<summary>Máte zľavový kód?</summary>
+						<div class="discount-code-content">
+							<input type="text" placeholder="Zadajte kód" class="discount-input">
+							<button class="discount-code-btn">Uplatniť</button>
+						</div>
+					</details>
+				</div>
+				
+				<div class="cart-summary">
+					<div class="cart-total-price">
+						<span>Celkom k úhrade:</span>
+						<strong>22,50 €</strong>
 					</div>
-				</details>
+					<div class="cart-shipping-date">
+						<span>Tovar bude odoslaný</span>
+						<strong>do 20. 5. 2026.</strong></div>
+				</div>
 			</div>
 		
 		</section>
-		
-		<hr>
 			
-	<!-- KOŠÍK - prihoďte si ešte -->
+<!-- OTHER PRODUCTS -->
 		
-		<section class="other-products">
+		<section class="cart-other-products">
 		
 		<h2>Prihoďte si ešte k objednávke</h2>
-			<div class="other-products-grid-kosik">
+			<div class="cart-other-products-grid">
 				
-				<article class="product-card-kosik">
-					<a href="/produkt-detail" class="product-link">
-						<span class="tag-sale">AKCIA</span>
-						<div class="product-image">
-							<img src="produkt.webp" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">
+				<article class="cart-product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="cart-product-card-tag-sale">AKCIA</span>
+						<span class="cart-product-card-tag-top">TOP</span>
+						<div class="cart-product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
 						</div>
-					</a>	
-
-						<div class="product-info">
-							<div class="product-rating-mini">
-								<span class="stars">★★★★★</span>
-								<span class="count"><strong>4,8</strong> (12x)</span>
+					</a>
+						<div class="cart-product-card-info">
+							<div class="cart-product-card-rating">
+								<div class="cart-product-card-stars">
+									<svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="cart-product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
 							</div>
-							<a href="" class="product-link">
-								<h3 class="product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							<a href="" class="cart-product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
 							</a>
-							<div class="product-price">
-								<span class="current-price">19.90 €</span>
-								<span class="old-price">24.90 €</span>
+							<div class="cart-product-card-prices">
+								<span class="cart-product-card-current-price">7,50 €</span>
+								<span class="cart-product-card-old-price">10,50 €</span>	
 							</div>
-							
 						</div>
-						<div class="skladom-btn">
-							<span class="skladom">Skladom</span>
-							<button class="add-to-cart-simple">Vložiť do košíka</button>
-						</div>	
+						<div class="cart-product-card-in-stock-and-add-to-cart-btn">
+							<span class="cart-product-card-in-stock">Skladom</span>
+							<button class="cart-product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
 				</article>
 				
-				<article class="product-card-kosik">
-					<a href="/produkt-detail" class="product-link">
-						<span class="tag-sale">AKCIA</span>
-						<div class="product-image">
-							<img src="produkt.webp" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">
-							
+				<article class="cart-product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="cart-product-card-tag-sale">AKCIA</span>
+						<span class="cart-product-card-tag-top">TOP</span>
+						<div class="cart-product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
 						</div>
-					</a>	
-
-						<div class="product-info">
-							<div class="product-rating-mini">
-								<span class="stars">★★★★★</span>
-								<span class="count"><strong>4,8</strong> (12x)</span>
+					</a>
+						<div class="cart-product-card-info">
+							<div class="cart-product-card-rating">
+								<div class="cart-product-card-stars">
+									<svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="cart-product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
 							</div>
-							<a href="" class="product-link">
-								<h3 class="product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							<a href="" class="cart-product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
 							</a>
-							
-								<div class="product-price">
-								<span class="current-price">19.90 €</span>
-								<span class="old-price">24.90 €</span>
-								
+							<div class="cart-product-card-prices">
+								<span class="cart-product-card-current-price">7,50 €</span>
+								<span class="cart-product-card-old-price">10,50 €</span>	
 							</div>
-							
 						</div>
-						<div class="skladom-btn">
-							<span class="skladom">Skladom</span>
-							<button class="add-to-cart-simple">Vložiť do košíka</button>
-						</div>	
+						<div class="cart-product-card-in-stock-and-add-to-cart-btn">
+							<span class="cart-product-card-in-stock">Skladom</span>
+							<button class="cart-product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
 				</article>
 				
-				<article class="product-card-kosik">
-					<a href="/produkt-detail" class="product-link">
-						<span class="tag-sale">AKCIA</span>
-						<div class="product-image">
-							<img src="produkt.webp" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">
-							
+				<article class="cart-product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="cart-product-card-tag-sale">AKCIA</span>
+						<span class="cart-product-card-tag-top">TOP</span>
+						<div class="cart-product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
 						</div>
-					</a>	
-
-						<div class="product-info">
-							<div class="product-rating-mini">
-								<span class="stars">★★★★★</span>
-								<span class="count"><strong>4,8</strong> (12x)</span>
+					</a>
+						<div class="cart-product-card-info">
+							<div class="cart-product-card-rating">
+								<div class="cart-product-card-stars">
+									<svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="cart-product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="cart-product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
 							</div>
-							<a href="" class="product-link">
-								<h3 class="product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							<a href="" class="cart-product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
 							</a>
-							
-								<div class="product-price">
-								<span class="current-price">19.90 €</span>
-								<span class="old-price">24.90 €</span>
-								
+							<div class="cart-product-card-prices">
+								<span class="cart-product-card-current-price">7,50 €</span>
+								<span class="cart-product-card-old-price">10,50 €</span>	
 							</div>
-							
 						</div>
-						<div class="skladom-btn">
-							<span class="skladom">Skladom</span>
-							<button class="add-to-cart-simple">Vložiť do košíka</button>
-						</div>	
+						<div class="cart-product-card-in-stock-and-add-to-cart-btn">
+							<span class="cart-product-card-in-stock">Skladom</span>
+							<button class="cart-product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
 				</article>
 				
 			</div>
 			
 		</section>
 
-	<!-- KOŠÍK - nakúpte ešte za -->
- 
-		<div class="obsah-kosika-nakupte-este">
+<!-- FREE SHIPPING INFO -->
+
+		<div class="free-shipping-info">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<rect x="1" stroke="none" fill="none" />
 				<path d="M1 3h15v13H1z" />
@@ -349,46 +397,29 @@
 			</svg>
 			<span>Nakúpte ešte za <strong>27,50 €</strong> a získajte <strong>doručenie ZADARMO</strong>.</span>
 		</div>
-
-	<!-- KOŠÍK - cart sumary a pokračovať -->	
+		
+<!-- NEXT CHECKOUT STEP -->	
 			
-		<div class="cart-summary">
-			<a href="detail-produktu.html" class="spat-do-eshopu">&larr; Späť do e-shopu</a>
-			<div class="total-price-pokracovat">
-				<div class="total-price">
-					<span>Celkom k úhrade:</span>
-					<strong>22,50 €</strong>
-				</div>
-				<a href="dorucenie-a-platba.html" class="btn-next">Pokračovať v objednávke &rarr;</a>
+		<div class="checkout-btns">
+			<a href="detail-produktu.html" class="checkout-btn-back">&larr; Späť do e-shopu</a>
+			<a href="dorucenie-a-platba.html" class="cart-checkout-btn-next">Pokračovať v objednávke &rarr;</a>
 			</div>
 		</div>
-			
-		
-		
-    </main>
+	
+	</main>
 	
 <!-- FOOTER -->	
 
-    <footer  class="footer-container">
+    <footer class="footer-container">
 	    <div class="footer">
             
 			<div>
 				<img src="logo-footer.png">
 			</div>
 			
-			<div id="footer-informacie">
-				<h3>Informácie</h3>
-				<ul>
-					<li><a href="">Doručenie a platba</a></li>
-					<li><a href="">Obchodné podmienky</a></li>
-					<li><a href="">Ochrana osobných údajov</a></li>
-				</ul>
-			</div>
-			
-			<div>
-				<h3>Kontakt</h3>
-				<p>Roman Kováčik<br /><strong>info@fruitychilli.sk</strong></p>
-				</p>
+			<div class="need-help">
+				<h2>Potrebujete pomôcť, poradiť?</h2>
+				<h3>Roman Kováčik<br />info@fruitychilli.sk</h3>
 			</div>
         </div>
 		<div id="footer-down-container">

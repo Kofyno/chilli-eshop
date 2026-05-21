@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoznam produktov | FruityChilli.sk</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+    <header class="header-wrapper">
+	
+<!-- TOP MENU -->
+	
+		<div class="top-bar-wrapper">
+			
+			<div class="top-bar-container">
+				<div class="top-bar-links">
+					<a href="">Doručenie a platba</a>
+					<a href="">Obchodné podmienky</a>
+					<a href="">Ochrana osobných údajov</a>
+				</div>
+				
+				<div class="login-registration-links">
+					<div class="login-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-user">
+						<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+						</svg>
+						<a href="">Prihlásenie</a>
+					</div>
+					<a href="">Registrácia</a>
+				</div>
+				
+			</div>
+		</div>
+
+
+<!-- HEADER MAIN -->				
+		
+		<div class="header-main-wrapper">
+			<div class="header-main-container">
+			
+				<a href="index.html">
+					<img src="logo-footer.png">
+				</a>
+				
+<!-- SEARCH BAR -->
+
+				<div class="search">
+					<form class="search-bar" action="/hladat" method="GET">
+						<div class="search-input-wrapper">
+							<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="11" cy="11" r="8"></circle>
+								<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+							</svg>
+							<input type="text" name="search" placeholder="Zadajte, čo hľadáte..." aria-label="Vyhľadávanie">
+						</div>
+						<button type="submit">Hľadať</button>
+					</form>
+				</div>
+
+<!-- MINI-CART -->
+
+				<div class="mini-cart-wrapper">
+					
+					<a href="cart.html" class="mini-cart-link">
+							<svg class="mini-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="9" cy="21" r="1"></circle>
+								<circle cx="20" cy="21" r="1"></circle>
+								<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+							</svg>
+							<span class="mini-cart-product-count">2</span>
+						<span class="mini-cart-text">22,50 €</span>
+					</a>
+
+<!-- MINI-CART DROPDOWN -->
+
+					<div class="mini-cart-dropdown">
+
+						<div class="mini-cart-dropdown-items-list">
+						
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>2 ks x 7,50 €</small>
+								</div>
+								<span><strong>15,00&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
+							</div>
+							
+							<div class="mini-cart-dropdown-item">
+								<img src="produkt.png" class="mini-cart-dropdown-item-img">
+								<div class="mini-cart-item-details">
+									<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+									<small>1 ks x 7,50 €</small>
+								</div>
+								<span><strong>7,50&nbsp;€</strong></span>
+								<button class="mini-cart-dropdown-item-remove">×</button>
+							</div>
+							
+						</div>
+
+						<div class="mini-cart-dropdown-free-shipping-info">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+								<rect x="1" y="3" width="15" height="13"></rect>
+								<polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+								<circle cx="5.5" cy="18.5" r="2.5"></circle>
+								<circle cx="18.5" cy="18.5" r="2.5"></circle>
+							</svg>
+							<span>Nakúpte ešte za <strong>27,50 €</strong> a máte <strong>doručenie ZADARMO</strong>.</span>
+						</div>
+						<a href="/pokladna" class="mini-cart-dropdown-btn">Do pokladne</a>
+					</div>
+				
+				</div>
+				
+			</div>
+				
+		</div>
+		
+<!-- MENU -->				
+
+		<nav class="nav-main-wrapper">
+			<div class="nav-main-container">
+			
+				<ul class="nav-main-list">
+				
+					<li class="has-mega-menu">
+						<a href="/produkty" class="mega-menu-link">Chilli produkty</a>
+						
+						<div class="mega-menu">
+							<div class="mega-menu-content">
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli pasty</a></h3>
+								</div>
+								
+								<div class="mega-menu-item">
+									<div class="mega-menu-img"><img src="produkt.png"></div>
+									<h3><a href>Chilli omáčky</a></h3>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					
+					<li><a href="/clanky">Články</a></li>
+					<li><a href="/o-nas">O nás</a></li>
+					<li><a href="/kontakt">Kontakt</a></li>
+					
+				</ul>
+				
+			</div>
+		</nav>
+				
+	</header>
+	
+<!-- BREADCRUMBS -->
+
+		<nav aria-label="Drobčeková navigácia" class="breadcrumbs">
+			<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a href="/" itemprop="item"><span itemprop="name">FruityChilli.sk</span></a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a href="/chilli-pasty" itemprop="item"><span itemprop="name">Chilli pasty</span></a>
+					<meta itemprop="position" content="2" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name" aria-current="page">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</span>
+					<meta itemprop="position" content="3" />
+				</li>
+			</ol>
+		</nav>
+		
+<!-- CONTAINER -->
+
+	<div class="product-list-container">
+
+<!-- SIDEBAR -->
+
+		<!-- 1. ĽAVÝ SIDEBAR: Produktové menu -->
+		<aside class="product-list-sidebar">
+			<div class="sidebar-product-menu-wrapper">
+				<h3 class="sidebar-product-menu-title">Kategórie produktov</h3>
+				<ul class="sidebar-product-menu-list">
+					
+					<li>
+						<a href="/chilli-pasty" class="sidebar-product-menu-link active">
+							<span>Chilli pasty</span>
+							<span class="sidebar-product-menu-product-count">(6)</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="/chilli-pasty" class="sidebar-product-menu-link">
+							<span>Chilli omáčky</span>
+							<span class="sidebar-product-menu-product-count">(5)</span>
+						</a>
+					</li>
+        
+				</ul>
+			</div>
+		</aside>
+
+<!-- CONTAINER / MAIN -->
+					
+		<main class="product-list-main">
+		
+<!-- Úvodný text kategórie -->
+			<div class="product-list-category-text">
+				<h1>Chilli pasty zo Slovenska</h1>
+				<p>Objav svet poctivých, hustých chilli pást. Od jemne pikantných až po extrémne pálivé kúsky z papričiek Bhut Jolokia či Carolina Reaper. Všetko vyrobené bez pridanej chémie.</p>
+			</div>
+			
+<!-- PRODUCT LIST - BESTSELLERS -->
+
+			<div class="product-list-bestsellers-wrapper">
+				
+				<h2>Najpredávanejšie</h2>
+							
+				<div class="product-list-bestsellers-grid">
+									
+					<div class="product-list-bestsellers-item">
+						<img src="produkt.png" class="product-list-bestsellers-item-img">
+						<div class="product-list-bestsellers-item-details">
+							<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+						</div>
+						<span><strong>7,50&nbsp;€</strong></span>		
+					</div>
+								
+					<div class="product-list-bestsellers-item">
+						<img src="produkt.png" class="product-list-bestsellers-item-img">
+						<div class="product-list-bestsellers-item-details">
+							<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+						</div>
+						<span><strong>7,50&nbsp;€</strong></span>		
+					</div>
+								
+					<div class="product-list-bestsellers-item">
+						<img src="produkt.png" class="product-list-bestsellers-item-img">
+						<div class="product-list-bestsellers-item-details">
+							<a href="#">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</a>
+						</div>
+						<span><strong>7,50&nbsp;€</strong></span>		
+					</div>
+								
+				</div>
+							
+			</div>
+
+<!-- ADVENTAGES -->
+
+					<div class="advantages-container">
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Iba chilli s ovocnou chuťou</a>
+							</div>
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Chilli iba od SK a CZ výrobcov</a>
+							</div>
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Chilli iba v skle (žiadny plast)</a>
+							</div>
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Vrátenie peňazí bez otázok</a>
+							</div>
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Priateľský e-shop Coffeein.sk</a>
+							</div>
+							<div class="advantage-item">
+								<img src="swoosh.png" class="icon">
+								<a href="">Doručenie nad 50 € ZADARMO</a>
+							</div>
+						</div>
+
+<!-- PRODUCT LIST GRID -->
+
+		<h2 class="products-number">6 chilli produktov v tejto kategórii</h2>
+							
+		<div class="product-list-grid">
+		
+			<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-sale">AKCIA</span>
+						<span class="product-card-tag-top">TOP</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>
+								<span class="product-card-old-price">10,50 €</span>	
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+				
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,6</strong> <a href="">(8x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>	
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+				
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-sale">AKCIA</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,1</strong> <a href="">(11x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>
+								<span class="product-card-old-price">10,50 €</span>	
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+				
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-top">TOP</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,5</strong> <a href="">(15x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+				
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<span class="product-card-tag-sale">AKCIA</span>
+						<span class="product-card-tag-top">TOP</span>
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,8</strong> <a href="">(12x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>
+								<span class="product-card-old-price">10,50 €</span>	
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+				
+				<article class="product-card">
+					<a href="/produkt-detail" class="product-card-product-link">
+						<div class="product-card-image">
+							<img src="produkt.png" alt="Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)">	
+						</div>
+					</a>
+						<div class="product-card-info">
+							<div class="product-card-rating">
+								<div class="product-card-stars">
+									<svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon fill" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="product-card-star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+								</div>
+								<span class="product-card-rating-text"><strong>4,2</strong> <a href="">(7x)</a></span>
+							</div>
+							<a href="" class="product-card-product-title-link">
+								<h3 class="product-card-product-title">Chilli pasta - Bhut Jolokia (štiplavosť 8 z 9)</h3>
+							</a>
+							<div class="product-card-prices">
+								<span class="product-card-current-price">7,50 €</span>
+							</div>
+						</div>
+						<div class="product-card-in-stock-and-add-to-cart-btn">
+							<span class="product-card-in-stock">Skladom</span>
+							<button class="product-card-add-to-cart-btn">Vložiť do košíka</button>
+						</div>
+				</article>
+		
+			</div>							
+
+<!-- END OF CONTAINER / MAIN -->
+
+		</main>
+	
+	</div>
+	
+<!-- FOOTER -->
+
+    <footer  class="footer-container">
+	    <div class="footer">
+            
+			<div>
+				<img src="logo-footer.png">
+			</div>
+			
+			<div class="footer-information">
+				<h3>Informácie</h3>
+				<ul>
+					<li><a href="">Doručenie a platba</a></li>
+					<li><a href="">Obchodné podmienky</a></li>
+					<li><a href="">Ochrana osobných údajov</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3>Kontakt</h3>
+				<p>Roman Kováčik<br /><strong>info@fruitychilli.sk</strong></p>
+				</p>
+			</div>
+        </div>
+		<div class="footer-down-container">
+			<div class="footer-down"><p>&copy; 2026 FruityChilli.sk. Všetky práva vyhradené.</p></div>
+		</div>
+	</footer>
+
+</body>
+</html>
